@@ -1,0 +1,11 @@
+/* About.css */
+
+/* Define the animation */
+.about-img {
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.about-img:hover {
+  transform: scale(1.05);
+}
