@@ -21,10 +21,10 @@ const About = () => {
             About Me
           </h1>
           <h1 className="text-[35px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            {AppText.aboutMetitle}
           </h1>
 
-          <h1 className="">{AppText.aboutMeDescription}</h1>
+          <h1 className="text-[18px]">{AppText.aboutMeDescription}</h1>
         </div>
       </div>
     </div>
