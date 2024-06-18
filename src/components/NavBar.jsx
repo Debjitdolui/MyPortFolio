@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import { logo } from '../assets'
-import "./NavBar.css"
-
+import React, { useState } from "react";
+import { logo } from "../assets";
+import "./NavBar.css";
 
 const NavBar = () => {
-
-    const [toggle,setToggle]=useState(0)
+  const [toggle, setToggle] = useState(0);
   return (
     <div className="w-full p-[10px] flex justify-between items-center fixed bg-slate-400">
-      <img src={logo} className=" h-[45px] md:h-[50px] cursor-pointer hover:scale-110 ml-4" />
+      <img
+        src={logo}
+        className=" h-[45px] md:h-[50px] cursor-pointer hover:scale-110 ml-4"
+      />
 
       <div>
         <ul className="hidden md:flex text-[20px] ">
@@ -36,9 +37,7 @@ const NavBar = () => {
             viewBox="0 0 24 24"
             fill="currentColor"
             className="w-6 h-6 cursor-pointer md:hidden"
-            onClick={()=>setToggle(
-              !toggle
-            )}
+            onClick={() => setToggle(!toggle)}
           >
             <path
               fillRule="evenodd"
@@ -51,8 +50,8 @@ const NavBar = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-              className="w-6 h-6 cursor-pointer md:hidden"
-              onClick={()=>setToggle(!toggle)}
+            className="w-6 h-6 cursor-pointer md:hidden"
+            onClick={() => setToggle(!toggle)}
           >
             <path
               fillRule="evenodd"
@@ -60,31 +59,30 @@ const NavBar = () => {
               clipRule="evenodd"
             />
           </svg>
-        )
-        }
-       
-        {toggle?<ul className=" md:hidden absolute flex mt-8 flex-col bg-gray-200 p-2 rounded-sm text-[20px] ">
-          <li className="menuItem hover:scale-110 p-3 hover:z-50 transition-all duration-300 ease-in-out">
-            <a href="/#home">Home</a>
-          </li>
-          <li className="menuItem p-3 hover:scale-110">
-            <a href="/#aboutme">About</a>
-          </li>
-          <li className="menuItem p-3 hover:scale-110">
-            <a href="/#skills">Skills</a>
-          </li>
-          <li className="menuItem p-3 hover:scale-110">
-            <a href="/#Projects">Project</a>
-          </li>
-          <li className="menuItem p-3 hover:scale-110">
-            <a href="/#contact">Contact</a>
-          </li>
-        </ul>:null
+        )}
 
-        }
+        {toggle ? (
+          <ul className=" md:hidden absolute flex mt-8 flex-col bg-gray-200 p-2 rounded-sm text-[20px] ">
+            <li className="menuItem hover:scale-110 p-3 hover:z-50 transition-all duration-300 ease-in-out">
+              <a href="/#home">Home</a>
+            </li>
+            <li className="menuItem p-3 hover:scale-110">
+              <a href="/#aboutme">About</a>
+            </li>
+            <li className="menuItem p-3 hover:scale-110">
+              <a href="/#skills">Skills</a>
+            </li>
+            <li className="menuItem p-3 hover:scale-110">
+              <a href="/#Projects">Project</a>
+            </li>
+            <li className="menuItem p-3 hover:scale-110">
+              <a href="/#contact">Contact</a>
+            </li>
+          </ul>
+        ) : null}
       </div>
     </div>
   );
-}
+};
 
-export default NavBar
+export default NavBar;

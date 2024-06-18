@@ -1,9 +1,9 @@
-import React from 'react'
-import { AppText } from '../constants'
-import Typewriter from 'typewriter-effect'
-import { homeImage } from '../assets'
+import React from "react";
+import { AppText } from "../constants";
+import Typewriter from "typewriter-effect";
+import { homeImage } from "../assets";
 
-import "./Home.css"
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -55,6 +55,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

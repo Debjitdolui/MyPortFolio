@@ -1,7 +1,6 @@
-import React from 'react'
-import { AppText } from '../constants';
-import { aboutme } from '../assets';
-
+import React from "react";
+import { AppText } from "../constants";
+import { aboutme } from "../assets";
 
 const About = () => {
   return (
@@ -20,15 +19,13 @@ const About = () => {
           <h1 className="text-black text-[45px] pt-[20px] font-bold text-center">
             About Me
           </h1>
-          <h1 className="text-[35px]">
-            {AppText.aboutMetitle}
-          </h1>
+          <h1 className="text-[35px]">{AppText.aboutMetitle}</h1>
 
           <h1 className="text-[18px]">{AppText.aboutMeDescription}</h1>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
